@@ -4,15 +4,16 @@
 	import Zap from '@lucide/svelte/icons/zap';
 	import Settings2 from '@lucide/svelte/icons/settings-2';
 	import Sparkles from '@lucide/svelte/icons/sparkles';
+
+	let bg_fond ='bg-[url(https://cdna.artstation.com/p/assets/images/images/025/327/818/large/trey-mcnair-tmcnair-terrain-ds-01-night.jpg?1585445993)]'
 </script>
 
-<section class="to-white via-zinc-100 from-white bg-gradient-to-t py-16 md:py-32 dark:bg-transparent">
+<section class="to-white via-zinc-100 from-white {bg_fond} bg-gradient-to-t py-16 md:py-32 dark:bg-transparent">
 	<div class="@container mx-auto max-w-5xl px-6">
-		<div class="text-center">
-			<h2 class="text-4xl font-cinzel uppercase font-semibold text-balance lg:text-5xl">Inspirer votre peuple</h2>
-			<p class="mt-4">
-				Libero sapiente aliquam quibusdam aspernatur, praesentium iusto repellendus.
-			</p>
+		<div class="text-center text-sky-800 text-shadow-2xs text-shadow-sky-400">
+			<h2 class="text-4xl font-amarante uppercase font-semibold text-balance lg:text-5xl">Inspirer votre peuple</h2>
+			<p class="mt-4 font-bold text-xl">
+Vous prenez toutes les décisions pour votre tribu.			</p>
 		</div>
 		<div
 			class="mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16 @min-4xl:max-w-full @min-4xl:grid-cols-3"

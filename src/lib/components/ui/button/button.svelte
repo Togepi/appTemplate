@@ -4,11 +4,11 @@
 	import { type VariantProps, tv } from 'tailwind-variants';
 
 	export const buttonVariants = tv({
-		base: 'inline-flex items-center cursor-pointer  hover:scale-105 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
+		base: 'inline-flex items-center cursor-pointer hover:scale-95 active:scale-90     justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
 		variants: {
 			variant: {
 				default:
-					'bg-radial-[at_52%_-52%]  **:[text-shadow:0_1px_0_var(--color-primary)] border-primary from-primary/70 to-primary/95 text-primary-foreground inset-shadow-2xs inset-shadow-white/25 dark:inset-shadow-white dark:from-primary dark:to-primary/70 dark:hover:to-primary border text-sm shadow-md shadow-zinc-950/30 ring-0 transition-[filter] duration-200  active:brightness-95 dark:border-0',
+					'bg-radial-[at_52%_-52%] bg-foreground hover:bg-sky-200  **:[text-shadow:0_1px_0_var(--color-primary)] hover:shadow-cyan-600/30 border-primary from-primary/70 to-primary/95 text-primary-foreground inset-shadow-2xs inset-shadow-white/25 dark:inset-shadow-white dark:from-primary dark:to-primary/70 dark:hover:to-primary border text-sm shadow-md shadow-zinc-950/30 ring-0 transition-[filter] duration-200  active:brightness-95 dark:border-0',
 				destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-xs',
 				outline:
 					'shadow-xs bg-linear-to-t hover:to-muted to-background from-muted dark:from-muted/50 dark:hover:to-muted/50 dark:border-border border border-zinc-300 shadow-zinc-950/10 duration-200',

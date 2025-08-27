@@ -29,13 +29,23 @@
 		}
 		return false;
 	});
+	let link_bg = 'https://cdnb.artstation.com/p/assets/images/images/034/079/331/large/koke-nunez-iceland1.jpg?1611332096'
+	let total_bg = "bg-[url('https://cdna.artstation.com/p/assets/images/images/046/457/238/large/pengzhen-zhang-demo.jpg?1645296652')]";
+	const parts = [
+  "bg-[url('",
+  link_bg,
+  "')]",
+];
+	let text = parts.filter(Boolean).join("");
+
+	console.log(text)
 </script>
 
 
 <div>
 	<!-- Scroll below to see the snippet code  -->
 
-	<main class="overflow-hidden">
+	<main class="overflow-hidden {total_bg} bg-cover bg-bottom py-32" >
 		<div class="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block">
 			<div
 				class="absolute top-0 left-0 h-320 w-140 -translate-y-87.5 -rotate-45 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,hsla(0,0%,85%,.08)_0,hsla(0,0%,55%,.02)_50%,hsla(0,0%,45%,0)_80%)]"
@@ -47,7 +57,7 @@
 				class="absolute top-0 left-0 h-320 w-60 -translate-y-87.5 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]"
 			></div>
 		</div>
-		<section>
+		<section >
 			<div class="relative pt-24 md:pt-36">
 				<div
 					class="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"
@@ -81,50 +91,27 @@
 							</a>
 						</div>
 
-						<h1 class="mt-8 font-amarante uppercase font-bold text-3xl text-balance lg:text-9xl  lg:mt-16 xl:text-[18.25rem]">
-							1804						</h1>
-						<p class="mx-auto font-amarante mt-8 max-w-6xl text-3xl text-balance">
-						En année 1804 est un jeu de rôle grandeur nature où vous prenez le rôle d'une divinité. 
-							Incarner vos valeurs morales et inspirer votre peuple.
-						</p>
+						<h1 class="mt-8 font-amarante  font-bold text-3xl text-balance lg:text-9xl text-white   lg:mt-16 xl:text-[3.25rem]">
+							Royaume de l’Avalanche : plongez au cœur des vallées gelées					</h1>
+						<p class="mx-auto  mt-8 max-w-4xl text-lg text-balance text-white text-shadow-black text-shadow-2xs font-semibold">
+Avalanche est un jeu de rôle grandeur nature épisodique et sandbox. 
+Chaque joueuse incarne une tribu qui tente de survivre au coeur de montagnes habitées par des hivers mortels.						</p>
 
 						<div class="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
 							<div
-								class="border bg-foreground/10 p-0.5"
+								class=" bg-foreground/10 p-0.5 "
 								style="border-radius: calc(0.5rem + 0.125rem + 4px);"
 							>
-								<Button href="#link" size="lg" class="rounded-xl px-5 text-base">
+								<Button href="#link" size="lg" class="rounded-xl   px-5 text-base">
 									<span class="text-nowrap">Découvrir le jeu</span>
 								</Button>
 							</div>
-							<Button size="lg" variant="ghost" class="rounded-xl px-5">Je débute le jeu de rôle</Button>
+							<Button size="lg" variant="outline" class="rounded-xl px-5">Je débute le jeu de rôle</Button>
 						</div>
 					</div>
 				</div>
 
-				<div class="relative mt-8 -mr-56 overflow-hidden px-2 sm:mt-12 sm:mr-0 md:mt-20">
-					<div
-						class="absolute inset-0 z-10 bg-linear-to-b from-transparent from-35% to-background"
-					></div>
-					<div
-						class="relative mx-auto max-w-6xl overflow-hidden rounded-2xl border bg-background p-4 shadow-lg inset-shadow-2xs shadow-zinc-950/15 ring-background dark:inset-shadow-white/20"
-					>
-						<img
-							class="relative hidden aspect-15/8 rounded-2xl bg-background dark:block"
-							src="https://cdna.artstation.com/p/assets/images/images/091/235/896/large/egor-kapustin-dionysis-fin.jpg?1756226715"
-							alt="app screen"
-							width="2700"
-							height="1440"
-						/>
-						<img
-							class="relative z-2 aspect-15/8 rounded-2xl border border-border/25 dark:hidden"
-							src="https://cdna.artstation.com/p/assets/images/images/091/235/896/large/egor-kapustin-dionysis-fin.jpg?1756226715"
-							alt="app screen"
-							width="2700"
-							height="1440"
-						/>
-					</div>
-				</div>
+				
 			</div>
 		</section>
 		
